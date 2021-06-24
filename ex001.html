@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Imagem</title>
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <section>
+    <h1>Começando os estudos em HTML e CSS.</h1>
+    <h2>Introduzindo imagens por HTML.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, at sunt. Sunt, perferendis eius quos at, voluptatibus in similique voluptates ut fugiat repudiandae quod corrupti impedit nobis excepturi vitae neque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, at sunt. Sunt, perferendis eius quos at, voluptatibus in similique voluptates ut fugiat repudiandae quod corrupti impedit nobis excepturi vitae neque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, at sunt. Sunt, perferendis eius quos at, voluptatibus in similique voluptates ut fugiat repudiandae quod corrupti impedit nobis excepturi vitae neque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, at sunt. Sunt, perferendis eius quos at, voluptatibus in similique voluptates ut fugiat repudiandae quod corrupti impedit nobis excepturi vitae neque! Ex: &lt;p&gt;</p> <!-- lorem //-->
+    <img src="logohtml.png" alt="Logo HTML5">
+    <hr>
+    <h2>Introduzindo as CSS.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit officiis tempora dicta error et molestiae laboriosam voluptates. Dolor est et deserunt? Eligendi, animi aut quidem perferendis aspernatur soluta itaque accusamus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit officiis tempora dicta error et molestiae laboriosam voluptates. Dolor est et deserunt? Eligendi, animi aut quidem perferendis aspernatur soluta itaque accusamus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit officiis tempora dicta error et molestiae laboriosam voluptates. Dolor est et deserunt? Eligendi, animi aut quidem perferendis aspernatur soluta itaque accusamus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit officiis tempora dicta error et molestiae laboriosam voluptates. Dolor est et deserunt? Eligendi, animi aut quidem perferendis aspernatur soluta itaque accusamus?</p> <!-- lorem //-->
+    <img src="logocss.png" alt="Logo CSS">
+    <hr>
+    <h2>Introdução ao JavaScript.</h2> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil molestias necessitatibus nesciunt molestiae totam odio quidem earum sunt, harum alias. Dolore debitis rem, ut minima veniam nisi non minus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil molestias necessitatibus nesciunt molestiae totam odio quidem earum sunt, harum alias. Dolore debitis rem, ut minima veniam nisi non minus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil molestias necessitatibus nesciunt molestiae totam odio quidem earum sunt, harum alias. Dolore debitis rem, ut minima veniam nisi non minus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil molestias necessitatibus nesciunt molestiae totam odio quidem earum sunt, harum alias. Dolore debitis rem, ut minima veniam nisi non minus?</p>
+    <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png" alt="Logo JavaScript">
+    <p><a href="../listas.html" rel="prev">voltar para a primeira página</a></p>
+    </section>
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+</body>
+</html>
